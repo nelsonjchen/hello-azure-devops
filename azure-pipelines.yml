@@ -14,12 +14,12 @@ jobs:
     vmImage: 'vs2017-win2016'
   steps:
   - script: echo hello from Windows 2016
-- job: Windows
+- job: Windows2012R2
   pool:
     vmImage: 'vs2015-win2012r2'
   steps:
   - script: echo hello from Windows 2012r2
-- job: Windows
+- job: Windows1803
   pool:
     vmImage: 'win1803'
   steps:
