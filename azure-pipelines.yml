@@ -12,6 +12,7 @@ jobs:
   - script: echo hello from macOS
   - script: sw_vers
   - script: system_profiler SPHardwareDataType
+  - script: system_profiler
 - job: Windows
   pool:
     vmImage: 'vs2017-win2016'
