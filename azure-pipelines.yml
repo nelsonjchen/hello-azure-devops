@@ -19,12 +19,16 @@ jobs:
   steps:
   - script: echo hello from Windows 2016
   - script: systeminfo
+  - script: dir "C:\Program Files"
+  - script: dir "C:\Program Files (x86)"
 - job: Windows2012R2
   pool:
     vmImage: 'vs2015-win2012r2'
   steps:
   - script: echo hello from Windows 2012r2
   - script: systeminfo
+  - script: dir "C:\Program Files"
+  - script: dir "C:\Program Files (x86)"
 - job: Windows1803
   pool:
     vmImage: 'win1803'
